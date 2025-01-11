@@ -8,13 +8,15 @@ const app: Application = express();
 app.use(express.json());
  
 // Enable CORS for all routes
+
 app.use(cors({
   origin: "*",
 }));
 
 // Default
 app.get("/api", (req: Request, res: Response) => {
-  res.status(201).json({ message: "Welcome to my test ts" });
+  console.log("/api")
+  res.status(201).json({ message: "Welcome to my test ts" }); 
 });
 
 
@@ -23,6 +25,8 @@ app.get("/", (req: Request, res: Response) => {
 });
 
  
-const PORT = process.env.PORT || 5005;
+const PORT = process.env.PORT || 3007;
 
-app.listen(PORT, (): void => console.log(`Server is running on ${PORT}`));
+app.listen(PORT, () => console.log("Server ready on port 3000."));
+
+export default app

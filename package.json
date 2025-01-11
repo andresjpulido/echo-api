@@ -2,7 +2,7 @@
   "name": "echo-api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "index.ts",
   "author": "Andres Pulido <andresjpulido@gmail.com>",
   "license": "ISC",
   "scripts": {
