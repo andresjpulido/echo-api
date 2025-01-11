@@ -17,6 +17,11 @@ app.get("/api", (req: Request, res: Response) => {
   res.status(201).json({ message: "Welcome to my test ts" });
 });
 
+
+app.get("/", (req: Request, res: Response) => {
+  res.status(201).json({ message: "It works !!!" });
+});
+
  
 const PORT = process.env.PORT || 5005;
 
