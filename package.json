@@ -6,9 +6,8 @@
   "author": "Andres Pulido <andresjpulido@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "start": "node --env-file=.env --watch -r ts-node/register src/server.ts",
-     
-    "build": "tsc",
+    "start": "node --env-file=.env --watch -r ts-node/register src/server.ts", 
+    "build": "tsc -b",
     "build:ui": "@powershell Remove-Item -Recurse -Force dist"
   },
   "dependencies": {
